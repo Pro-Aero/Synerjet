@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { UserAuthForm } from "./credentials/sign-in-form";
+import { FormComponent } from "./credentials/sign-in-form";
 
 export const runtime = "edge";
 
@@ -21,7 +21,7 @@ export default function SignIn() {
               Entre com sua conta
             </p>
           </div>
-          <UserAuthForm />
+          <FormComponent />
         </div>
       </div>
       <div className="hidden bg-muted lg:block col-span-2">

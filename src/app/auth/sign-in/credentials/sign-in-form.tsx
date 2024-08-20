@@ -9,11 +9,15 @@ import { Eye, EyeOff } from "lucide-react";
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { API_AUTH, URL_API } from "@/utils/constans";
 
-export function UserAuthForm() {
+export function FormComponent() {
   const { push } = useRouter();
 
   const [passwordVisible, setPasswordVisible] = useState(false);
+
+  console.log("url-api" + URL_API);
+  console.log("api-key" + API_AUTH);
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
