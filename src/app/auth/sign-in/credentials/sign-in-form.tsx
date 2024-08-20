@@ -16,9 +16,6 @@ export function FormComponent() {
 
   const [passwordVisible, setPasswordVisible] = useState(false);
 
-  console.log("url-api" + URL_API);
-  console.log("api-key" + API_AUTH);
-
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
   };
